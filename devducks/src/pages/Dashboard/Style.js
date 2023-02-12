@@ -13,7 +13,7 @@ export const DashboardContainer = styled.main`
 }
 
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: var(--Grey-3);
     display: flex;
     flex-direction: column;

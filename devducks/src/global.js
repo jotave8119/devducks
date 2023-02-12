@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 
 #root{
   overflow-x: hidden;
+ 
 }
 
 :root {
