@@ -7,17 +7,14 @@ import { ListContainer } from "./Style";
 
 const TechsList = () => {
 
-  const { isLoading, filteredTechs } =
-    useContext(AuthContext);
+  const { isLoading, filteredTechs } = useContext(AuthContext);
 
     if(filteredTechs.length === 0){
       return(
         <NotFound/>
       )
     } else{
-      
         <ListContainer/>
-      
     }
 
   return isLoading ? (

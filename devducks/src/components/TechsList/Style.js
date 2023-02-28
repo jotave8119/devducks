@@ -69,6 +69,7 @@ li{
         .techName{
             margin-left: 7px;
             margin-top: 15px;
+            color: var(--Grey-0);
         }
         
         .techArea{

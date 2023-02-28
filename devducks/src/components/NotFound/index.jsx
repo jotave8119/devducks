@@ -13,16 +13,13 @@ const NotFound = () => {
       renderer: "svg",
       loop: true,
       autoplay: true,
-      path: "https://assets2.lottiefiles.com/private_files/lf30_k6fpeaa5.json",
+      path: "https://assets3.lottiefiles.com/packages/lf20_1vhutqov.json",
     });
     return () => Lottie.destroy();
   }, [container]);
 
   return (
-    <>
       <div className="notfound" ref={container}></div>
-      
-    </>
   );
 };
 
