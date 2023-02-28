@@ -53,6 +53,7 @@ export const DashboardContainer = styled.main`
         .form{
             height: 40px;
             color: var(--Grey-0);
+            background-color: var(--Grey-3);
             border-radius: 5px;
             border: solid 2px var(--Color-primary);
             padding: 5px;

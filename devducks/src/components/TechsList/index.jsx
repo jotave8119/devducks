@@ -2,12 +2,23 @@ import React from "react";
 import { useContext } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
 import Loading from "../Loading";
+import NotFound from "../NotFound";
 import { ListContainer } from "./Style";
 
 const TechsList = () => {
 
   const { isLoading, filteredTechs } =
     useContext(AuthContext);
+
+    if(filteredTechs.length === 0){
+      return(
+        <NotFound/>
+      )
+    } else{
+      
+        <ListContainer/>
+      
+    }
 
   return isLoading ? (
     <Loading/>

@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { createContext } from "react";
 import api from "../services/api";
 
+
 export const AuthContext = createContext({});
 
 const AuthProvider = ({children}) => {
@@ -22,9 +23,10 @@ const AuthProvider = ({children}) => {
 
   const filteredTechs = techs.filter(techs => 
     search === '' ? true : techs.name.toLowerCase().includes(search.toLowerCase()) ||
-    search === '' ? true : techs.area.toLowerCase().includes(search.toLowerCase())
+    search === '' ? true : techs.area.toLowerCase().includes(search.toLowerCase()) 
   );
-
+  
+  
 
   const override = {
     display: "block",

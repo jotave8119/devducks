@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const FooterBox = styled.footer`
 
     width: 100vw;
-    height: 100px;
+    height: 200px;
     padding: 3em;
     background-color: var(--Grey-4);
     border-top: solid 3px var(--Color-primary);
@@ -14,6 +14,7 @@ export const FooterBox = styled.footer`
 
     footer{
         display: flex;
+        background-color: var(--Grey-4);
         flex-direction: column;
         justify-content: center;
         align-items: center;

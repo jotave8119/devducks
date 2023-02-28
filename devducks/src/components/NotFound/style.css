@@ -1,0 +1,29 @@
+.notfound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    width: 300px;
+    height: 350px;
+    flex-direction: column;
+    
+
+}
+
+
+
+.notText{
+   
+    font-size: 25px;
+    text-align: center;
+    color: red;
+}
+
+@media(min-width:768px){
+    .notfound{
+        width: 80%;
+        height: 400px;
+        
+    }
+}
+
