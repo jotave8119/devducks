@@ -17,9 +17,9 @@ const Home = () => {
       <ParticlesBackground id="particles" />
       <div className="box">
         <img className="devdocs" src={DevdocsLogo1} alt="img" />
-        <h2 className="welcome">Bem-vindo(a) ao DevDOCS!</h2>
+        <h2 className="welcome">Bem-vindo(a) ao DevDUCKS!</h2>
         <p className="about">
-          O DevDOCS nada mais é que uma central de documentações. Sim! Elas
+          O DevDUCKS nada mais é que uma central de documentações. Sim! Elas
           estão reunidas em um só lugar para facilitar a sua vida.
         </p>
 
@@ -71,9 +71,6 @@ const Home = () => {
           </a>
         </div>
         <BtnHome/>
-        {/* <Link to="/Dashboard" className="glowing-btn" title="O que está esperando?">
-        <span className='glowing-txt'>I<span className='faulty-letter'>N</span>ICIAR</span>
-        </Link> */}
       </div>
       <footer className="foot"></footer>
     </HomeContainer>

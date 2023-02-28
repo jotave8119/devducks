@@ -7,9 +7,8 @@ import Footer from "../../components/Footer";
 import BtnDashboard from "../../components/BtnDashboard";
 
 const Dashboard = () => {
-  const { setSearch} = useContext(AuthContext);
-
   
+  const { setSearch} = useContext(AuthContext);
 
   return (
     <DashboardContainer>

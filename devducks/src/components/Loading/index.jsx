@@ -3,7 +3,6 @@ import { useContext } from "react";
 import { PuffLoader } from "react-spinners";
 import { AuthContext } from "../../contexts/AuthContext";
 
-
 const Loading = () => {
 
     const{isLoading, setIsLoading, override} =useContext(AuthContext);
