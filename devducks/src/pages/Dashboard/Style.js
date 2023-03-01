@@ -32,8 +32,8 @@ export const DashboardContainer = styled.main`
         border-bottom: solid 3px var(--Color-primary);
         top: 0;
         left: 0;
-        position: sticky;
-        z-index: 10;
+        position: fixed;
+        z-index: 9999;
         animation: fadeInDown 0.5s;
 
         .dashLogo{

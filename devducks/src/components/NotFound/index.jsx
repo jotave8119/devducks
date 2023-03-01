@@ -1,10 +1,11 @@
-import Lottie from "lottie-web";
 import { useContext } from "react";
 import { useEffect } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
+import Lottie from "lottie-web";
 import "./style.css";
 
 const NotFound = () => {
+
   const { container } = useContext(AuthContext);
 
   useEffect(() => {

@@ -1,8 +1,8 @@
 import React from "react";
-import { useContext } from "react";
-import { AuthContext } from "../../contexts/AuthContext";
 import Loading from "../Loading";
 import NotFound from "../NotFound";
+import { useContext } from "react";
+import { AuthContext } from "../../contexts/AuthContext";
 import { ListContainer } from "./Style";
 
 const TechsList = () => {

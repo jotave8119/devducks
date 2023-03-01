@@ -5,7 +5,7 @@ import { AuthContext } from "../../contexts/AuthContext";
 
 const Loading = () => {
 
-    const{isLoading, setIsLoading, override} =useContext(AuthContext);
+    const{isLoading, setIsLoading, override} = useContext(AuthContext);
 
     useEffect(() => {
         setTimeout(() => {
