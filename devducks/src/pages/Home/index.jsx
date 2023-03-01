@@ -16,7 +16,7 @@ const Home = () => {
     <HomeContainer>
       <ParticlesBackground id="particles" />
       <div className="box">
-        <img className="devdocs" src={DevdocsLogo1} alt="img" />
+        <img className="devdocs" src={DevdocsLogo1} alt="Devducks" />
         <h2 className="welcome">Bem-vindo(a) ao DevDUCKS!</h2>
         <p className="about">
           O DevDUCKS nada mais é que uma central de documentações. Sim! Elas

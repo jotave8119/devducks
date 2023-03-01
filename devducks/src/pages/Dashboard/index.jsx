@@ -13,7 +13,7 @@ const Dashboard = () => {
   return (
     <DashboardContainer>
       <nav className="navBar">
-        <img className="dashLogo" title="Quack!" src={dashLogo1} alt="img" />
+        <img className="dashLogo" title="Quack!" src={dashLogo1} alt="DevducksLogo" />
         <input
           className="form"
           placeholder="Procure uma tech"
