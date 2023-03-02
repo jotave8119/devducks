@@ -22,13 +22,14 @@ animation: fadeInUp 1s;
 
 
 li{
-    height: 250px;
+    height: 260px;
     width: 250px;
     border: solid 1px var(--Color-primary);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     background-color: var(--Grey-3);
+    box-shadow: #a016c7 0px 3px 8px;
 
     .imgBox{
         display: flex;
@@ -103,6 +104,23 @@ li{
             transition: 0.5s;
            }
         }
+    }
+
+    .top{
+        color: var(--Color-primary-Focus);
+        margin-left: 15px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        animation: flash 3s linear infinite;
+        background-color: transparent;
+        width: 20px;
+        height: 20px;
+
+        &:hover{
+            color: var(--Grey-0) ;
+            transform: translateY(-5px);
+            transition: 0.5s;
+           }
     }
 }
 

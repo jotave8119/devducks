@@ -1,13 +1,14 @@
 import React from "react";
-import Loading from "../Loading";
 import NotFound from "../NotFound";
 import { useContext } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
 import { ListContainer } from "./Style";
+import {RxDoubleArrowUp} from "react-icons/rx";
+import { Link } from "react-scroll";
 
 const TechsList = () => {
 
-  const { isLoading, filteredTechs } = useContext(AuthContext);
+  const {  filteredTechs } = useContext(AuthContext);
 
     if(filteredTechs.length === 0){
       return(
@@ -17,9 +18,7 @@ const TechsList = () => {
         <ListContainer/>
     }
 
-  return isLoading ? (
-    <Loading/>
-  ) : (
+  return (
     <ListContainer>
       {filteredTechs.map((tech) => (
         <li key={tech.id}>
@@ -41,6 +40,16 @@ const TechsList = () => {
               Ver Doc
             </a>
           </div>
+          <Link 
+            to="topBar" 
+            className="top"
+            title="voltar ao topo!" 
+            spy={true} 
+            smooth={true} 
+            offset={50} 
+            duration={500}>
+              <RxDoubleArrowUp size={20}/>
+          </Link>
         </li>
       ))}
     </ListContainer>
