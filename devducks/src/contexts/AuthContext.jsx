@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useRef } from "react";
 import { createContext } from "react";
 import api from "../services/api";
+import {toast} from "react-toastify";
 
 export const AuthContext = createContext({});
 
@@ -13,10 +14,33 @@ const AuthProvider = ({children}) => {
   const [isLoading, setIsLoading]     = useState(true);
   const container                     = useRef(null);
 
+  const notify = (message, type) => {
+    const config = {
+      position: "bottom-right",
+      autoClose: 1500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    };
+    if (type === "warn") {
+      return toast.warn(message, config);
+    }
+    if (type === "success") {
+      return toast.success(message, config);
+    }
+    if (type === "info") {
+      return toast.info(message, config);
+    } else {
+      return toast.error(message, config);
+    }
+  };
+
   useEffect(() => {
       api.get("techs")
          .then(resp => setTechs(resp.data))
-         .catch(err => console.log(err))
+         .catch(err => console.log(err))       
   }, []);
 
   const filteredTechs = techs.filter(techs => 
@@ -26,14 +50,15 @@ const AuthProvider = ({children}) => {
 
   const override = {
     display: "block",
-    margin: "0 auto",
+    margin: "200px auto",
+    
   };
 
       return(
         <AuthContext.Provider 
         value={{techs, setTechs, search,
                 setSearch, filteredTechs, isLoading, 
-                setIsLoading, override, container
+                setIsLoading, override, container, notify
               }}>
             {children}
         </AuthContext.Provider>
