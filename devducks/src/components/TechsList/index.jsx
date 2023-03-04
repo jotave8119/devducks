@@ -6,14 +6,15 @@ import { ListContainer } from "./Style";
 import {RxDoubleArrowUp} from "react-icons/rx";
 import { Link } from "react-scroll";
 
+
 const TechsList = () => {
 
   const {  filteredTechs } = useContext(AuthContext);
 
     if(filteredTechs.length === 0){
-      return(
-        <NotFound/>
-      )
+       return (<NotFound/>)
+        
+      
     } else{
         <ListContainer/>
     }
@@ -52,6 +53,7 @@ const TechsList = () => {
           </Link>
         </li>
       ))}
+      
     </ListContainer>
   );
 };

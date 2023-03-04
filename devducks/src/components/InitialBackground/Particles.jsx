@@ -26,7 +26,7 @@ const ParticlesBackground = () => {
                 autoPlay: true,
                 background: {
                   color: {
-                    value: "#343b41",
+                    value: "#c815ce",
                   },
                   image: "",
                   position: "",
@@ -38,7 +38,7 @@ const ParticlesBackground = () => {
                   composite: "destination-out",
                   cover: {
                     color: {
-                      value: "#fff",
+                      value: "#9b17c7",
                     },
                     opacity: 50,
                   },
@@ -156,17 +156,17 @@ const ParticlesBackground = () => {
                       area: {
                         gradient: {
                           start: {
-                            value: "#ffffff",
+                            value: "#b712b7",
                           },
                           stop: {
-                            value: "#000000",
+                            value: "#1212d8",
                           },
                         },
                         radius: 1000,
                       },
                       shadow: {
                         color: {
-                          value: "#000000",
+                          value: "#9011d0",
                         },
                         length: 2000,
                       },
@@ -219,7 +219,7 @@ const ParticlesBackground = () => {
                     },
                   },
                   color: {
-                    value: "#ffffff",
+                    value: "#c40ec1",
                     animation: {
                       h: {
                         count: 0,
@@ -310,7 +310,7 @@ const ParticlesBackground = () => {
                       length: 3,
                       fill: {
                         color: {
-                          value: "#000000",
+                          value: "#0d0d0e",
                         },
                       },
                     },
@@ -349,7 +349,7 @@ const ParticlesBackground = () => {
                   shadow: {
                     blur: 30,
                     color: {
-                      value: "#000",
+                      value: "#e717e0",
                     },
                     enable: false,
                     offset: {
@@ -452,7 +452,7 @@ const ParticlesBackground = () => {
                           width: 0,
                         },
                         color: {
-                          value: ["#a212a756", "#2a2a2dbb", "#2213d0", "#2213d0", "#2213d0"],
+                          value: "#d116d1f9",
                         },
                         number: {
                           value: 0,
@@ -587,7 +587,7 @@ const ParticlesBackground = () => {
                   links: {
                     blink: false,
                     color: {
-                      value: "#fff",
+                      value: "#1212a8",
                     },
                     consent: false,
                     distance: 100,
@@ -597,7 +597,7 @@ const ParticlesBackground = () => {
                     shadow: {
                       blur: 5,
                       color: {
-                        value: "#000",
+                        value: "#bb18e8",
                       },
                       enable: false,
                     },
@@ -652,7 +652,7 @@ const ParticlesBackground = () => {
                     y: 50,
                   },
                   spawnColor: {
-                    value: "#1623d7",
+                    value: "#de12de",
                     animation: {
                       h: {
                         count: 0,

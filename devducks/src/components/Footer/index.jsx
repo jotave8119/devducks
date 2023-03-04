@@ -3,11 +3,13 @@ import { FaGithub } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillCopyrightCircle } from "react-icons/ai";
+import { Link } from "react-scroll";
+import { RxDoubleArrowUp } from "react-icons/rx";
 
 const Footer = () => {
   return (
     <FooterBox>
-      <footer className="feet">
+      
         <a
           className="gitContact"
           href="https://github.com/jotave8119"
@@ -39,7 +41,17 @@ const Footer = () => {
           João teixeira 2023
           <AiFillCopyrightCircle className="instIcon" size={10} />
         </span>
-      </footer>
+        <Link 
+            to="topBar" 
+            className="toTop"
+            title="Voltar ao topo!" 
+            spy={true} 
+            smooth={true} 
+            offset={50} 
+            duration={500}>
+              Top <RxDoubleArrowUp size={20}/>
+          </Link>
+      
     </FooterBox>
   );
 };

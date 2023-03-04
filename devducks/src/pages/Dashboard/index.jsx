@@ -5,15 +5,22 @@ import dashLogo1 from "../../assets/dashLogo1.png";
 import TechsList from "../../components/TechsList";
 import Footer from "../../components/Footer";
 import BtnDashboard from "../../components/BtnDashboard";
+import Loading from "../../components/Loading";
 
 const Dashboard = () => {
-  
-  const { setSearch} = useContext(AuthContext);
+  const { setSearch, isloading } = useContext(AuthContext);
 
-  return (
+  return (isloading ? (
+    <Loading />
+  ) : (
     <DashboardContainer>
-      <nav className="navBar">
-        <img className="dashLogo" title="Quack!" src={dashLogo1} alt="DevducksLogo" />
+      <nav className="navBar" id="topBar">
+        <img
+          className="dashLogo"
+          title="Quack!"
+          src={dashLogo1}
+          alt="DevducksLogo"
+        />
         <input
           className="form"
           placeholder="Procure uma tech"
@@ -22,14 +29,14 @@ const Dashboard = () => {
             setSearch(event.target.value);
           }}
         />
-        <BtnDashboard/>
+        <BtnDashboard />
       </nav>
-        <ul className="list">
-          <TechsList />
-        </ul>
+      <ul className="list">
+        <TechsList />
+      </ul>
       <Footer />
     </DashboardContainer>
-  );
+  ))
 };
 
 export default Dashboard;

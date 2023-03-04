@@ -25,15 +25,15 @@ export const DashboardContainer = styled.main`
         height: 100px;
         padding: 20px;
         display: flex;
-        background-color: var(--Grey-4);
+        background-color: var(--Grey-4-transparent);
         justify-content: space-around;
         gap: 10px;
         align-items: center;
         border-bottom: solid 3px var(--Color-primary);
         top: 0;
         left: 0;
-        position: fixed;
-        z-index: 9999;
+        position: stick;
+        z-index: 1000;
         animation: fadeInDown 0.5s;
 
         .dashLogo{

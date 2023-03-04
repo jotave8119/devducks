@@ -18,7 +18,7 @@ align-items: center;
 flex-wrap: wrap;
 justify-content: space-evenly;
 gap: 25px;
-animation: fadeInUp 1s;
+animation: fadeInUp 0.5s;
 
 
 li{

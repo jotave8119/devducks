@@ -11,7 +11,7 @@ const AuthProvider = ({children}) => {
 
   const [techs, setTechs]             = useState([]);
   const [search, setSearch]           = useState("");
-  const [isLoading, setIsLoading]     = useState(true);
+  const [isloading, setisloading]     = useState(true);
   const container                     = useRef(null);
 
   const notify = (message, type) => {
@@ -57,8 +57,8 @@ const AuthProvider = ({children}) => {
       return(
         <AuthContext.Provider 
         value={{techs, setTechs, search,
-                setSearch, filteredTechs, isLoading, 
-                setIsLoading, override, container, notify
+                setSearch, filteredTechs, isloading, 
+                setisloading, override, container, notify
               }}>
             {children}
         </AuthContext.Provider>
