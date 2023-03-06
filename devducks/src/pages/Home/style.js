@@ -32,33 +32,6 @@ export const HomeContainer = styled.section`
           margin: 0;
         }
 
-        /* .logo{
-          font-weight: bold;
-          font-size: 40px;
-          color: var(--Grey-0);
-          display: flex;
-          flex-direction: row;
-          margin-top: 50px;
-          background-color:#2a2a2dbb;
-          border-radius: 5px;
-          padding: 5px;
-          
-          
-          
-          white-space: nowrap;
-          overflow: hidden;
-          animation: typewriter 2s steps(12) infinite alternate,
-            blink 800ms steps(12) infinite normal;
-          border-right: 5px solid white;
-
-          .blink{
-            font-weight: 500;
-            color: var(--Grey-0);
-            animation: flash 1s linear infinite;
-            margin-bottom: 10px;
-          }
-        } */
-
         .welcome{
             font-size: 35px;
             line-break: auto;

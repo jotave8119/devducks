@@ -1,8 +1,9 @@
 import Particles from "react-tsparticles";
 import { useCallback } from "react";
 import { loadFull } from "tsparticles";
+import {memo} from "react"
 
-const ParticlesBackground = () => {
+const ParticlesBackground = memo (() => {
 
     const particlesInit = useCallback(async engine => {
         console.log(engine);
@@ -26,7 +27,7 @@ const ParticlesBackground = () => {
                 autoPlay: true,
                 background: {
                   color: {
-                    value: "#c815ce",
+                    value: "#9e0e9e",
                   },
                   image: "",
                   position: "",
@@ -38,7 +39,7 @@ const ParticlesBackground = () => {
                   composite: "destination-out",
                   cover: {
                     color: {
-                      value: "#9b17c7",
+                      value: "#111111",
                     },
                     opacity: 50,
                   },
@@ -52,7 +53,7 @@ const ParticlesBackground = () => {
                 },
                 detectRetina: true,
                 duration: 0,
-                fpsLimit: 120,
+                fpsLimit: 100,
                 interactivity: {
                   detectsOn: "window",
                   events: {
@@ -156,17 +157,17 @@ const ParticlesBackground = () => {
                       area: {
                         gradient: {
                           start: {
-                            value: "#b712b7",
+                            value: "#b30bb3",
                           },
                           stop: {
-                            value: "#1212d8",
+                            value: "#fbfbfb",
                           },
                         },
                         radius: 1000,
                       },
                       shadow: {
                         color: {
-                          value: "#9011d0",
+                          value: "#161616",
                         },
                         length: 2000,
                       },
@@ -219,7 +220,7 @@ const ParticlesBackground = () => {
                     },
                   },
                   color: {
-                    value: "#c40ec1",
+                    value: "#b315b3",
                     animation: {
                       h: {
                         count: 0,
@@ -349,7 +350,7 @@ const ParticlesBackground = () => {
                   shadow: {
                     blur: 30,
                     color: {
-                      value: "#e717e0",
+                      value: "#b523b5",
                     },
                     enable: false,
                     offset: {
@@ -452,7 +453,7 @@ const ParticlesBackground = () => {
                           width: 0,
                         },
                         color: {
-                          value: "#d116d1f9",
+                          value: "#b61ab6f8",
                         },
                         number: {
                           value: 0,
@@ -587,7 +588,7 @@ const ParticlesBackground = () => {
                   links: {
                     blink: false,
                     color: {
-                      value: "#1212a8",
+                      value: "#1d1d1f",
                     },
                     consent: false,
                     distance: 100,
@@ -597,7 +598,7 @@ const ParticlesBackground = () => {
                     shadow: {
                       blur: 5,
                       color: {
-                        value: "#bb18e8",
+                        value: "#181718",
                       },
                       enable: false,
                     },
@@ -652,7 +653,7 @@ const ParticlesBackground = () => {
                     y: 50,
                   },
                   spawnColor: {
-                    value: "#de12de",
+                    value: "#b815b8bb",
                     animation: {
                       h: {
                         count: 0,
@@ -689,6 +690,6 @@ const ParticlesBackground = () => {
         }
         />
     )
-};
+})
 
 export default ParticlesBackground;

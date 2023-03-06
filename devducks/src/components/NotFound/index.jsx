@@ -1,10 +1,10 @@
-import { useContext } from "react";
+import { memo, useContext } from "react";
 import { useEffect } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
 import Lottie from "lottie-web";
 import "./style.css";
 
-const NotFound = () => {
+const NotFound = memo (() => {
 
   const { container } = useContext(AuthContext);
 
@@ -20,8 +20,8 @@ const NotFound = () => {
   }, [container]);
 
   return (
-      <div className="notfound" ref={container}></div>
+      <div className="notfound" title="Pesquisa não encontrada!" ref={container}></div>
   );
-};
+});
 
 export default NotFound;

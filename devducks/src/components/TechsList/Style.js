@@ -2,15 +2,6 @@ import styled from "styled-components";
 
 export const ListContainer = styled.section`
 
-*{
-    border: 0;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Nunito', sans-serif;
-}
 
 width: 100%;
 display: flex;
@@ -18,7 +9,8 @@ align-items: center;
 flex-wrap: wrap;
 justify-content: space-evenly;
 gap: 25px;
-animation: fadeInUp 0.5s;
+animation: fadeIn 1s;
+background-color:var(--Grey-3) ;
 
 
 li{
@@ -30,6 +22,7 @@ li{
     flex-direction: column;
     background-color: var(--Grey-3);
     box-shadow: #a016c7 0px 3px 8px;
+   
 
     .imgBox{
         display: flex;

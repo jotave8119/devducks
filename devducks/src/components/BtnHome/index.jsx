@@ -1,8 +1,9 @@
+import { memo } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
 
-const BtnHome = () => {
+const BtnHome = memo (() => {
     return(
         
         <Link to="/Dashboard" className="glowing-btn" title="O que está esperando?">
@@ -10,6 +11,6 @@ const BtnHome = () => {
         </Link>
         
     );
-};
+});
 
 export default BtnHome;

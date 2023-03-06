@@ -2,15 +2,6 @@ import styled from "styled-components";
 
 export const DashboardContainer = styled.main`
 
-*{
-    border: 0;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Nunito', sans-serif;
-}
 
     width: 100vw;
     height: 100%;
@@ -32,16 +23,14 @@ export const DashboardContainer = styled.main`
         border-bottom: solid 3px var(--Color-primary);
         top: 0;
         left: 0;
-        position: stick;
-        z-index: 1000;
+        position: sticky;
+        z-index: 9999;
         animation: fadeInDown 0.5s;
 
         .dashLogo{
             width: 60px;
             height: 60px;
             animation: fadeIn 1s;
-            /* border: solid 2px var(--Color-primary);
-            border-radius: 50%; */
             transition: all 1s;
 
             &:hover{
@@ -60,20 +49,8 @@ export const DashboardContainer = styled.main`
             width: 130px;
 }
 
-        .title{
-            font-size: 25px;
-            display: flex;
-            flex-direction: row;
 
-            .blink{
-            font-weight: 500;
-            color: var(--Grey-0);
-            animation: flash 1s linear infinite;
-            margin-bottom: 10px;
-          }
-        }
-
-        .glowing-btn{
+.glowing-btn{
 
         position: relative;
         color: var(--Color-primary);
@@ -97,7 +74,7 @@ export const DashboardContainer = styled.main`
         box
 
 
-        .glowing-txt {
+.glowing-txt {
         float: left;
         margin-right: -0.8em;
         -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
@@ -108,12 +85,12 @@ export const DashboardContainer = styled.main`
         animation: text-flicker 3s linear infinite;
         }
 
-        .faulty-letter {
+.faulty-letter {
         opacity: 0.5;
         animation: faulty-flicker 2s linear infinite;
         }
 
-        .glowing-btn::before {
+.glowing-btn::before {
           content: "";
           position: absolute;
           top: 0;
@@ -127,7 +104,7 @@ export const DashboardContainer = styled.main`
           pointer-events: none;
         }
 
-        .glowing-btn::after {
+.glowing-btn::after {
           content: "";
           position: absolute;
           top: 0;
@@ -141,36 +118,35 @@ export const DashboardContainer = styled.main`
           transition: opacity 100ms linear;
         }
 
-        .glowing-btn:hover {
+.glowing-btn:hover {
           color: var(--Grey-0);
           text-shadow: none;
           animation: none;
         }
 
-        .glowing-btn:hover .glowing-txt {
+.glowing-btn:hover .glowing-txt {
           animation: none;
         }
 
-        .glowing-btn:hover .faulty-letter {
+.glowing-btn:hover .faulty-letter {
           animation: none;
           text-shadow: none;
           opacity: 1;
         }
 
-        .glowing-btn:hover:before {
+.glowing-btn:hover:before {
           filter: blur(1.5em);
           opacity: 1;
         }
 
-        .glowing-btn:hover:after {
+.glowing-btn:hover:after {
           opacity: 1;
         } 
         }
 
-        .list{
+.list{
             width: 90%;
             height: 80%;
-            
             padding: 30px;
             display: flex;
             align-items: center;
@@ -178,8 +154,6 @@ export const DashboardContainer = styled.main`
             background-color: var(--Grey-3);
             flex-direction: column;
             margin-bottom: 40px;
-            animation: fadeInLeft 0.5s;
-            
         }
 
     }

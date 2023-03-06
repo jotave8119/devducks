@@ -111,6 +111,7 @@ export const FooterBox = styled.footer`
             .toTop{
                 margin-top: 0;
             }
-        
     }
+
+
 `;
