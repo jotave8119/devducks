@@ -72,7 +72,6 @@ const Home = () => {
         </div>
         <BtnHome/>
       </div>
-      <footer className="foot"></footer>
     </HomeContainer>
   );
 };
