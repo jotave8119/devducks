@@ -24,7 +24,7 @@ const TechsList = () => {
       {filteredTechs.map((tech) => (
         <li key={tech.id}>
           <div className="imgBox">
-            <img className="techImg" src={tech.image} alt="img" />
+            <img className="techImg" loading="lazy" src={tech.image} alt="img" />
           </div>
           <div className="info">
             <h4 className="techName">Nome: {tech.name}</h4>

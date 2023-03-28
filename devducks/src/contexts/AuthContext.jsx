@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { useRef } from "react";
 import { createContext } from "react";
 import api from "../services/api";
-import {toast} from "react-toastify";
 
 export const AuthContext = createContext({});
 
@@ -14,29 +13,7 @@ const AuthProvider = ({children}) => {
   const [isloading, setisloading]     = useState(true);
   const container                     = useRef(null);
 
-  const notify = (message, type) => {
-    const config = {
-      position: "bottom-right",
-      autoClose: 1500,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    };
-    if (type === "warn") {
-      return toast.warn(message, config);
-    }
-    if (type === "success") {
-      return toast.success(message, config);
-    }
-    if (type === "info") {
-      return toast.info(message, config);
-    } else {
-      return toast.error(message, config);
-    }
-  };
-
+  
   useEffect(() => {
       api.get("techs")
          .then(resp => setTechs(resp.data))
@@ -58,7 +35,7 @@ const AuthProvider = ({children}) => {
         <AuthContext.Provider 
         value={{techs, setTechs, search,
                 setSearch, filteredTechs, isloading, 
-                setisloading, override, container, notify
+                setisloading, override, container
               }}>
             {children}
         </AuthContext.Provider>

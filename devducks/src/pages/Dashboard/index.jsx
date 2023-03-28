@@ -1,5 +1,5 @@
 import { AuthContext } from "../../contexts/AuthContext";
-import React, {  useContext } from "react";
+import React, { useContext } from "react";
 import { DashboardContainer } from "./Style";
 import dashLogo1 from "../../assets/dashLogo1.png";
 import TechsList from "../../components/TechsList";
@@ -10,7 +10,7 @@ import Loading from "../../components/Loading";
 const Dashboard = () => {
   const { setSearch, isloading } = useContext(AuthContext);
 
-  return (isloading ? (
+  return isloading ? (
     <Loading />
   ) : (
     <DashboardContainer>
@@ -36,7 +36,7 @@ const Dashboard = () => {
       </ul>
       <Footer />
     </DashboardContainer>
-  ))
+  );
 };
 
 export default Dashboard;

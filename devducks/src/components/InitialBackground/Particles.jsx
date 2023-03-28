@@ -1,9 +1,9 @@
 import Particles from "react-tsparticles";
 import { useCallback } from "react";
 import { loadFull } from "tsparticles";
-import {memo} from "react"
 
-const ParticlesBackground = memo (() => {
+
+const ParticlesBackground = () => {
 
     const particlesInit = useCallback(async engine => {
         console.log(engine);
@@ -22,7 +22,9 @@ const ParticlesBackground = memo (() => {
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
+        
         options={
+          
             {
                 autoPlay: true,
                 background: {
@@ -690,6 +692,6 @@ const ParticlesBackground = memo (() => {
         }
         />
     )
-})
+};
 
 export default ParticlesBackground;

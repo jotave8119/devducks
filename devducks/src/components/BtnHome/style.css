@@ -7,10 +7,11 @@
     border: 0.15em solid var(--Color-primary);
     border-radius: 0.45em;
     background: none;
-    perspective: 2em;
+    perspective: 1em;
     font-family: "Raleway", sans-serif;
-    font-size: 2em;
+    font-size: 1em;
     font-weight: 900;
+    margin-top: 30px;
     letter-spacing: 1em;
   
     -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--Color-primary),

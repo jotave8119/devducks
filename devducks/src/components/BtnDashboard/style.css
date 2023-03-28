@@ -1,5 +1,5 @@
 
-.glowing-btn {
+.glow-btn {
     position: relative;
     color: var(--Color-primary);
     cursor: pointer;
@@ -12,6 +12,7 @@
     font-size: 1em;
     font-weight: 900;
     letter-spacing: 0.5em;
+    
   
     -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--Color-primary),
       0px 0px 0.5em 0px var(--Color-primary);
@@ -22,7 +23,7 @@
     animation: border-flicker 2s linear infinite;
   }
   
-  .glowing-txt {
+  .glow-txt {
     float: left;
     margin-right: -0.8em;
     -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
@@ -33,12 +34,12 @@
     animation: text-flicker 3s linear infinite;
   }
   
-  .faulty-letter {
+  .fau-letter {
     opacity: 0.5;
     animation: faulty-flicker 2s linear infinite;
   }
   
-  .glowing-btn::before {
+  .glow-btn::before {
     content: "";
     position: absolute;
     top: 0;
@@ -52,7 +53,7 @@
     pointer-events: none;
   }
   
-  .glowing-btn::after {
+  .glow-btn::after {
     content: "";
     position: absolute;
     top: 0;
@@ -66,31 +67,31 @@
     transition: opacity 100ms linear;
   }
   
-  .glowing-btn:hover {
+  .glow-btn:hover {
     color: var(--Grey-0);
     text-shadow: none;
     animation: none;
   }
   
-  .glowing-btn:hover .glowing-txt {
+  .glow-btn:hover .glowing-txt {
     animation: none;
     color: var(--Grey-0);
   }
   
-  .glowing-btn:hover .faulty-letter {
+  .glow-btn:hover .faulty-letter {
     animation: none;
     text-shadow: none;
     color: var(--Grey-0);
     opacity: 1;
   }
   
-  .glowing-btn:hover:before {
+  .glow-btn:hover:before {
     filter: blur(1.5em);
     opacity: 1;
     color: var(--Grey-0);
   }
   
-  .glowing-btn:hover:after {
+  .glow-btn:hover:after {
     opacity: 1;
     color: var(--Grey-0);
   }

@@ -1,10 +1,10 @@
-import { memo, useEffect } from "react";
+import { useEffect } from "react";
 import { useContext } from "react";
 import { PuffLoader } from "react-spinners";
 import { AuthContext } from "../../contexts/AuthContext";
 import "./style.css";
 
-const Loading = memo( () => {
+const Loading =  () => {
 
     const{isloading, setisloading, override} = useContext(AuthContext);
 
@@ -24,6 +24,6 @@ const Loading = memo( () => {
         />
       </div>
     );
-});
+};
 
 export default Loading;
